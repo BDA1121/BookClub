@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.thebookclub.HelloController">
+    <!-- Header Section -->
+    <top>
+        <HBox style="-fx-background-color: #3498db;">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <children>
+                <Label fx:id="welcomeText"/>
+                <Button text="User Page"  styleClass="button" onAction="#onHelloButtonClick"/>
+                <Button text="Search"  styleClass="button" onAction="#onHelloButtonClick"/>
+            </children>
+        </HBox>
+    </top>
+
+    <!-- Body Section -->
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <children>
+                <!-- Book Details - Assuming you have labels to display book details -->
+                <HBox spacing="10">
+                    <Label text="Book 1 Title:"/>
+                    <Label text="Book 1 Author:"/>
+                    <!-- Add more labels for book details -->
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Book 2 Title:"/>
+                    <Label text="Book 2 Author:"/>
+                    <!-- Add more labels for book details -->
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Book 3 Title:"/>
+                    <Label text="Book 3 Author:"/>
+                    <!-- Add more labels for book details -->
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Book 4 Title:"/>
+                    <Label text="Book 4 Author:"/>
+                    <!-- Add more labels for book details -->
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

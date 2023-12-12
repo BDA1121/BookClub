@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <VBox alignment="center" spacing="10">
+        <Label text="Login" style="-fx-font-size: 24px;"/>
+        <TextField fx:id="usernameField" promptText="Username"/>
+        <PasswordField fx:id="passwordField" promptText="Password"/>
+        <Button text="Login" onAction="#loginAction"/>
+        <Label text="No account? Signup" style="-fx-font-size: 14px;"/>
+
+        <Button text="SignUp" onAction="#gotosignup"/>
+
+        <Label fx:id="errorLabel" textFill="red"/>
+    </VBox>
+</GridPane>

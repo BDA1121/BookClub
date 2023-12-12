@@ -1,19 +1,39 @@
 .button {
-    -fx-background-color: #3498db; /* Background color */
-    -fx-text-fill: white; /* Text color */
-    -fx-border-color: #3498db; /* Border color */
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-border-color: #3498db;
     -fx-fit-to-height: 40px;
     -fx-fit-to-width: 60px;
 }
 
 /* Define styles for the hovered state of the button */
 .button:hover {
-    -fx-background-color: #45aaf2; /* Hovered background color */
-    -fx-text-fill: white; /* Hovered text color */
+    -fx-background-color: #45aaf2;
+    -fx-text-fill: white;
 }
 
 /* Define styles for the pressed state of the button */
 .button:pressed {
-    -fx-background-color: #2575b1; /* Pressed background color */
-    -fx-text-fill: white; /* Pressed text color */
+    -fx-background-color: #2575b1;
+    -fx-text-fill: white;
+}
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20px;
+}
+
+.label-title {
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+.button-post {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
 }

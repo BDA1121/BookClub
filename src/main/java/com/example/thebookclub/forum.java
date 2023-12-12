@@ -1,6 +1,8 @@
 package com.example.thebookclub;
 
-//forum model and basic getters and setters for each
+/**
+ * Represents a Forum object in the application.
+ */
 
 import java.util.ArrayList;
 

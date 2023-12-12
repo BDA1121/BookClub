@@ -1,6 +1,8 @@
 package com.example.thebookclub;
+/**
+ * user model and basic getters and setters for each
+ */
 
-//user model and basic getters and setters for each
     public class user {
         private String Id;
         private String password;

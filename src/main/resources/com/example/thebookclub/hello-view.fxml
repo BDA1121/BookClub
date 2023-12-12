@@ -2,53 +2,49 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.thebookclub.HelloController">
-    <!-- Header Section -->
-    <top>
-        <HBox style="-fx-background-color: #3498db;">
-            <padding>
-                <Insets top="10" right="10" bottom="10" left="10"/>
-            </padding>
-            <children>
-                <Label fx:id="welcomeText"/>
-                <Button text="User Page"  styleClass="button" onAction="#onHelloButtonClick"/>
-                <Button text="Search"  styleClass="button" onAction="#onHelloButtonClick"/>
-            </children>
-        </HBox>
-    </top>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<ScrollPane fitToWidth="true" fitToHeight="true" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <BorderPane>
+            <!-- Navbar -->
+            <top>
+                <HBox spacing="10" style="-fx-padding: 10px; -fx-background-color: #f0f0f0;">
+                    <Button text="Home"/>
+                    <Button text="Lend Books" onAction="#goToBookLending"/>
+                    <Button text="Rent Books" onAction="#goToBookRenting"/>
+                    <Button text="Forum" onAction="#goToforums"/>
+                </HBox>
+            </top>
 
-    <!-- Body Section -->
-    <center>
-        <VBox spacing="10">
-            <padding>
-                <Insets top="20" right="20" bottom="20" left="20"/>
-            </padding>
-            <children>
-                <!-- Book Details - Assuming you have labels to display book details -->
-                <HBox spacing="10">
-                    <Label text="Book 1 Title:"/>
-                    <Label text="Book 1 Author:"/>
-                    <!-- Add more labels for book details -->
-                </HBox>
-                <HBox spacing="10">
-                    <Label text="Book 2 Title:"/>
-                    <Label text="Book 2 Author:"/>
-                    <!-- Add more labels for book details -->
-                </HBox>
-                <HBox spacing="10">
-                    <Label text="Book 3 Title:"/>
-                    <Label text="Book 3 Author:"/>
-                    <!-- Add more labels for book details -->
-                </HBox>
-                <HBox spacing="10">
-                    <Label text="Book 4 Title:"/>
-                    <Label text="Book 4 Author:"/>
-                    <!-- Add more labels for book details -->
-                </HBox>
-            </children>
-        </VBox>
-    </center>
-</BorderPane>
+            <!-- Body -->
+            <center>
+                <VBox alignment="CENTER" spacing="20">
+                    <Label text="Welcome to the Book Club" style="-fx-font-size: 20;"/>
+                    <Label text="Top Grossing Books" style="-fx-font-size: 10;"/>
+
+                    <!-- Top Grossing Book Tiles -->
+                    <TilePane alignment="CENTER" hgap="20" vgap="20">
+                        <VBox style="-fx-background-color: lightblue; -fx-padding: 10;">
+                            <Label text="Shoe Dog"/>
+                            <ImageView>
+                                <image>
+                                    <Image url="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41JxTleg+gL._SY445_SX342_.jpg"/>
+                                </image>
+                            </ImageView>
+                        </VBox>
+                        <VBox style="-fx-background-color: lightblue; -fx-padding: 10;">
+                            <Label text="Ikigai"/>
+                            <ImageView>
+                                <image>
+                                    <Image url="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51xwGSNX-EL._SY445_SX342_.jpg"/>
+                                </image>
+                            </ImageView>
+                        </VBox>
+                    </TilePane>
+                </VBox>
+            </center>
+        </BorderPane>
+    </content>
+</ScrollPane>
